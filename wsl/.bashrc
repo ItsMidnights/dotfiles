@@ -116,4 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias ws="cd ~/Documents/repos/github.com/"
+alias ws="vi ~/Documents/repos/github.com/"
+alias sobash="source ~/.bashrc"
+alias vibash="vi ~/.dotfiles/wsl/.bashrc"
+alias vivi="vi ~/.dotfiles/nvim/init.vim"

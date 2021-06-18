@@ -25,6 +25,10 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 syntax on
@@ -53,4 +57,6 @@ augroup SCHADOUGH
         autocmd!
         autocmd BufWritePre * :call TrimWhitespace()
 augroup END
+
+au BufWinEnter * set number relativenumber
 
