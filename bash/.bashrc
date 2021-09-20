@@ -149,6 +149,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias ws="cd ~/Documents/repos/github.com"
 
 # Clear Duplicates in $PATH
 export PATH=$(echo "$PATH" | awk -v RS=: -v ORS=: '!(a[$0]++)' | sed 's/:$//')
