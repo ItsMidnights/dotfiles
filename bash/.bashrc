@@ -149,6 +149,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:$HOME/bin
+
+alias ws="cd ~/Documents/repos/github.com/"
+alias utrgv="ssh michael.casas01@utrgv.edu@129.113.4.123"
+
+
 
 # Clear Duplicates in $PATH
 export PATH=$(echo "$PATH" | awk -v RS=: -v ORS=: '!(a[$0]++)' | sed 's/:$//')
